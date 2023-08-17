@@ -8,7 +8,7 @@ const LogRoutes = require("./routes/LogRoutes");
 
 const app = express();
 
-const PORT = 8080;
+const PORT = 8084;
 
 mongoConfig();
 
