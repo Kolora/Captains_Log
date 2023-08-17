@@ -8,7 +8,7 @@ const LogRoutes = require("./routes/LogRoutes");
 
 const app = express();
 
-const PORT = 8085;
+const PORT = 8080;
 
 mongoConfig();
 
@@ -31,10 +31,6 @@ app.use("/logs", LogRoutes);
 // "root" route
 app.get("/", (req, res) => {
   res.send("Hello World!");
-});
-
-app.listen(PORT, () => {
-  console.log("Listening on port: " + PORT, process.env.MONGO_URL);
 });
 
 app.listen(PORT, () => {
